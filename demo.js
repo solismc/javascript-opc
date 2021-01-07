@@ -1,6 +1,11 @@
 'use strict'; 
-(function() {
 
-  display('What a mess!');
+  var cat = {
+    name: 'fluffy',
+    color: 'white',
+    speak: function() {display("meeeoow")}
+  }
+  cat.age = 3
 
-})();
+  cat.speak()
+
