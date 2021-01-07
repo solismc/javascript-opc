@@ -23,3 +23,11 @@
     color: 'white'
   }
   console.log(Object.getOwnPropertyDescriptor(cat, 'name'))
+
+  var cat = {
+    name: {first: 'Fluffy', last: 'LaBeouf'},
+    color: 'white'
+  }
+  Object.defineProperty(cat, 'name', {enumerable: false})
+
+  console.log(JSON.stringify(cat))
