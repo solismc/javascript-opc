@@ -9,3 +9,12 @@
 
   cat.speak()
 
+  function Cat(name, color) {
+    this.name = name
+    this.color = color
+  }
+
+  let cat = new Cat('Fluffy', 'White');
+
+  console.log(cat)
+
