@@ -1,6 +1,6 @@
 'use strict'; 
 
-  var cat = {
+/*  var cat = {
     name: 'fluffy',
     color: 'white',
     speak: function() {display("meeeoow")}
@@ -16,5 +16,10 @@
 
   let cat = new Cat('Fluffy', 'White');
 
-  console.log(cat)
+  console.log(cat)*/
 
+var cat = {
+  name:'Fluffy',
+  color: 'white'
+}
+console.log(Object.getOwnPropertyDescriptor(cat, 'name'))
