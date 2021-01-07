@@ -28,6 +28,11 @@
     name: {first: 'Fluffy', last: 'LaBeouf'},
     color: 'white'
   }
-  Object.defineProperty(cat, 'name', {enumerable: false})
+  Object.defineProperty(cat, 'fullName', 
+    {
+      get: function() {
+        return  this.name.first + ' ' + this.name.last
+      }
+    })
 
-  console.log(JSON.stringify(cat))
+  console.log(cat.fullName)
