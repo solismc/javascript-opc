@@ -18,7 +18,7 @@
 
   console.log(cat)*/
 
-  var cat = {
+  /*var cat = {
     name:'Fluffy',
     color: 'white'
   }
@@ -42,5 +42,14 @@
   cat.fullName = 'Muffin Top'
   console.log(cat.fullName)
   console.log(cat.name.first)
-  console.log(cat.name.last)
+  console.log(cat.name.last)*/
+  
+  var arr = ['red', 'blue', 'green']
+
+  var last = arr[arr.length-1]
+  console.log(last)
+
+  
+
+
   
