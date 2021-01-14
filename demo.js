@@ -46,10 +46,16 @@
   
   var arr = ['red', 'blue', 'green']
 
-  var last = arr[arr.length-1]
+    Object.defineProperty(arr, 'last', {get: function() {
+      return this[this.length-1]
+    }})
+
+  var last = arr.last
+  var arr2 = ['one', 'two', 'three']
+  console.log(arr2.last) //this will throw an error of undefined// 
   console.log(last)
 
-  
+
 
 
   
