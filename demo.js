@@ -55,6 +55,18 @@
   console.log(arr2.last) //this will throw an error of undefined// 
   console.log(last)
 
+//If we create an array.prototype, then the error above will be solved. 
+
+var arr = ['red', 'blue', 'green']
+
+    Object.defineProperty(Array.prototype, 'last', {get: function() {
+      return this[this.length-1]
+    }})
+
+  var last = arr.last
+  var arr2 = ['one', 'two', 'three']
+  console.log(Array) //this will work
+  
 
 
 
