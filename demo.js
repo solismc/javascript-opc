@@ -67,7 +67,17 @@ var arr = ['red', 'blue', 'green']
   var arr2 = ['one', 'two', 'three']
   console.log(Array) //this will work
   
+function Cat(name, color) {
+  this.name = name
+  this.color = color
+}
+Cat.prototype.age = 4
 
+var fluffy = new Cat('Fluffy', 'White')
+var muffin = new Cat('Muffin', 'Brown')
+
+console.log(fluffy.age)
+console.log(muffin.age)
 
 
   
