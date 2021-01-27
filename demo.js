@@ -119,8 +119,27 @@ function multipleCase() {
       console.log("The color is grey");
       break;
     default:
-      console.log("Unknow color");
+      console.log("Unknown color");
       break;
   }
 }
+// Why is it important to ADD a break?//
+//Lets see what happens when you don't add a break in a switch statement//
+
+function forgetABreak() {
+  let productId = 2;
   
+  switch (productId) {
+    case 1:
+      console.log("HL Road Frame - Balck, 58");
+      break;
+    case 2:
+      console.log("Sport-100 Helmet, Red");
+    case 3:
+      console.log("Mountain Bike Socks, M");
+      break;
+    default:
+      console.log("Unknown product");
+      break;
+      }
+  }
