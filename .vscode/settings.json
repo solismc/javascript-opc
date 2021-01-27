@@ -1,5 +1,9 @@
 {
   "editor.glyphMargin": false,
   "editor.folding": false,
-  "scm.diffDecorations": "none"
+  "scm.diffDecorations": "none",
+  "cSpell.words": [
+    "beouf",
+    "meeeoow"
+  ]
 }

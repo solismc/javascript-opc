@@ -79,6 +79,24 @@ var muffin = new Cat('Muffin', 'Brown')
 console.log(fluffy.age)
 console.log(muffin.age)*/
 
+//Switch Statements//
 
+//Simple Switch Example//
+
+ function simpleSwitch() {
+   let productId = 2;
+
+   switch(productId) {
+     case 1:
+       console.log("product 1");
+       break;
+    case 2:
+      console.log("product 2");
+      break;
+    default:
+      console.log("Unknown Product");
+      break;
+   }
+ }
 
   
