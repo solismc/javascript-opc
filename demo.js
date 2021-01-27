@@ -99,4 +99,28 @@ console.log(muffin.age)*/
    }
  }
 
+ //Multiple Case Statements//
+
+function multipleCase() {
+  let color = "Red";
+
+  switch (color) {
+    case "Red":
+    case "Pink":
+      console.log("The color is red");
+      break;
+    case "Blue":
+    case "Light Blue":
+    case "Dark Blue":
+      console.log("The color is blue");
+      break;
+    case "Gray":
+    case "Grey":
+      console.log("The color is grey");
+      break;
+    default:
+      console.log("Unknow color");
+      break;
+  }
+}
   
